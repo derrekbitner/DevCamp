@@ -1,26 +1,23 @@
-# README
+# Devcamp Portfollio ApplicationController
 
-fdfsdfds
+> This is a Ruby 5 application 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Features
 
-Things you may want to cover:
+- Real time chat for comments
+- Blog
+- portfollio
+- drag and drop
+- 
+### Code example
+ 
+```ruby
+def my_great_method
+    puts "here it is"
+end
+```
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```javascript
+    alert ('hi there')
+    ```
