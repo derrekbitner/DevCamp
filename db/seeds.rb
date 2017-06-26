@@ -35,7 +35,7 @@ end
                     derrekbitner:~/workspace/DevCamp (portfollio-feature) $ ",
 
             main_image: "http://via.placeholder.com/600x400",
-            thumb_image: "http://via.placeholder.com/350x200"
+            thumb_image: "http://via.placeholder.com/350x200",
             )
             
         end
