@@ -20,7 +20,7 @@ end
     
     9.times do |portfolio_item|
         Portfolio.create!(
-            title: "Portfolio Title",
+            title: "Portfolio Title: ",
             subtitle: "service",
             body: "derrekbitner:~/workspace $ cd DevCamp/
                     derrekbitner:~/workspace/DevCamp (master) $ git checkout -b portfollio-feature
