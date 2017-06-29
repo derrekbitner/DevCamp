@@ -1,5 +1,5 @@
 class Skill < ApplicationRecord
-    include Plaeholder
+    include Placeholder
     
     validates_presence_of :title, :percent_utilized
     
