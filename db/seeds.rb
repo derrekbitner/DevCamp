@@ -1,9 +1,21 @@
+3.times do |topic|
+    Topic.create!(
+        title: "Topic #{topic}"
+        )
+end
+
+puts "3 topics created"
+
 10.times do |blog|
     Blog.create!(
         title: "My repeat post #{blog}",
         
         body: "repeat bost body #{blog} jfkdajkfd;la fdsjhfjsakhdfsa fdshakj
-        dhsjds fdsfsd fds fsfdsfdsfsd  werw rewrew  fsd c sddcsdcsdfsf"
+        dhsjds fdsfsd fds fsfdsfdsfsd  werw rewrew  fsd c sddcsdcsdfsf jfkdajkfd;la fdsjhfjsakhdfsa fdshakj
+        dhsjds fdsfsd fds fsfdsfdsfsd  werw rewrew  fsd c sddcsdcsdfsfjfkdajkfd;la fdsjhfjsakhdfsa fdshakj
+        dhsjds fdsfsd fds fsfdsfdsfsd  werw rewrew  fsd c sddcsdcsdfsfjfkdajkfd;la fdsjhfjsakhdfsa fdshakj
+        dhsjds fdsfsd fds fsfdsfdsfsd  werw rewrew  fsd c sddcsdcsdfsf",
+        topic_id: Topic.last.id
         
         )
     
@@ -18,21 +30,23 @@ end
     
     puts "5 skills created"
     
-    9.times do |portfolio_item|
+    8.times do |portfolio_item|
         Portfolio.create!(
             title: "Portfolio Title: ",
-            subtitle: "service",
-            body: "derrekbitner:~/workspace $ cd DevCamp/
-                    derrekbitner:~/workspace/DevCamp (master) $ git checkout -b portfollio-feature
-                    Switched to a new branch 'portfollio-feature'
-                    derrekbitner:~/workspace/DevCamp (portfollio-feature) $ rails c
-                    Running via Spring preloader in process 1801
-                    Loading development environment (Rails 5.1.1)
-                    2.4.0 :001 > Blog.create!(title: 'console test', body: 'testing'
-                    2.4.0 :002?>   
-                    SyntaxError: (irb):1: syntax error, unexpected end-of-input, expecting ')'
-                    
-                    derrekbitner:~/workspace/DevCamp (portfollio-feature) $ ",
+            subtitle: "Ruby on Rails",
+            body: "dassdadasda ds ad s dsa dsds ds ds ds dwegtregtreg re gew gregrewgwreg f gfdsg fsd ",
+
+            main_image: "http://via.placeholder.com/600x400",
+            thumb_image: "http://via.placeholder.com/350x200",
+            )
+            
+        end
+        
+        1.times do |portfolio_item|
+        Portfolio.create!(
+            title: "Portfolio Title: ",
+            subtitle: "Amgular",
+            body: "dassdadasda ds ad s dsa dsds ds ds ds dwegtregtreg re gew gregrewgwreg f gfdsg fsd ",
 
             main_image: "http://via.placeholder.com/600x400",
             thumb_image: "http://via.placeholder.com/350x200",

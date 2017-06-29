@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :users
   resources :portfolios, except: [:show]
+  get 'amgular-items', to: 'portfolios#amgular'
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
   
   
