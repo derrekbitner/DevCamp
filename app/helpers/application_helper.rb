@@ -22,4 +22,8 @@ module ApplicationHelper
         end
         
     end
+    
+    def copyright_generator
+        DevcampViewTool::Renderer.copyright 'Derrek Bitner', 'All rights reserved'
+    end
 end
