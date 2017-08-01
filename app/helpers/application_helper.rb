@@ -26,4 +26,7 @@ module ApplicationHelper
     def copyright_generator
         DevcampViewTool::Renderer.copyright 'Derrek Bitner', 'All rights reserved'
     end
+    
+    def nav_helper style, tag_type
+    end
 end
