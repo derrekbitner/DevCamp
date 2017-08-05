@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users, path: '', path_names: {sign_in: 'login', sign_out: 'logout', sign_up: 'register'}
   resources :users
-  resources :portfolios, except: [:show]
+  resources :portfolios, except: [:show] do
+    put :sort, on: :collection
+  end
+  
+  
   get 'amgular-items', to: 'portfolios#amgular'
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
   
